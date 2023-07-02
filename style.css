@@ -6,10 +6,13 @@
 
 header{
     text-align: center;
-    background: linear-gradient(120deg,orange,white,purple,white,green);
+     background: linear-gradient(120deg,orange,white,white,purple,white,white,green); 
+    
+    color: black;
     padding: 15px;
     position: fixed;
     width: 100%;
+
  
     
 }
@@ -37,20 +40,23 @@ header{
     
 }
 
+
     
 .allimages>img{
     
     border:5px solid black ;
    border-radius: 15%;
-   box-shadow:10px 10px 20px black ;
+   box-shadow:10px 10px 10px black ;
 
 }  
 .container{
  border: 5px solid purple;
-
+/* change border color when mouse is on border */
+ }
+ .container:hover{
+  border: 5px solid black;
  
-
-}
+  }
 .allimages >img:hover {
     /* Start the shake animation and make the animation last for 0.5 seconds */
     animation: shake 0.5s;
@@ -60,7 +66,7 @@ header{
   }
   
   @keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
+    0% { transform: translate(1px, 1px) rotate(0deg);  }
     10% { transform: translate(-1px, -2px) rotate(-1deg); }
     20% { transform: translate(-3px, 0px) rotate(1deg); }
     30% { transform: translate(3px, 2px) rotate(0deg); }
@@ -74,7 +80,7 @@ header{
   }
 
 
-
+/* to make the all images responsive */
 @media (max-width:900px){
     .allimages{
         display: grid;
@@ -90,6 +96,6 @@ header{
         border:5px solid black ;
        border-radius: 25%;
        width:90%;
-    
+       
     }  
 }
