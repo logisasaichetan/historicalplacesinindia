@@ -111,13 +111,21 @@ header {
   .allimages {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
     background-color: orange;
     justify-items: center;
+
+
   }
 
   .allimages>img {
+
     border: 5px solid black;
     border-radius: 25%;
     width: 90%;
+
   }
+}
+i{
+  margin: 2px;
 }
